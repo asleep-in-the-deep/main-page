@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="#ffffff">
+  <title>Журнал про котиков</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="icon" sizes="any" type="image/svg+xml" href="img/cat.svg">
+  <link rel="icon" sizes="any" type="image/png" href="img/cat.png">
+ </head>
+<body>
+	<header>
+		<div class="top-header">
+			<div class="top-header_col">
+				<a class="cat-logo" href="#">
+				<div class="navmenu_logo">
+					<div class="cat-face"></div>
+					<div class="logo-text">Про котиков</div>
+				</div>
+				<a href="javascript:void(0);" onclick="mobileMenu(),menuClose()"><div class="menu-icon" id="icon"></div></a>
+			</a>
+			</div>
+			<div class="top-header_col">
+				<div class="nav-items">
+					<nav class="navmenu">
+					<ul class="menu" id="top-nav">
+						<li class="menu_top-item">
+						    <a class="menu_top-link" href="#">Уход</a>
+						    <div class="navmenu_down-item">
+						    	<ul>
+								    <li class="down-link"><a href="#">Воспитание котят</a></li>
+								    <li class="down-link"><a href="#">Содержание кошек</a></li>
+								    <li class="down-link"><a href="#">Питание</a></li>
+								    <li class="down-link"><a href="#">Поведение</a></li>
+							    </ul>
+						    </div>
+						</li>
+						<li class="menu_top-item">
+						    <a class="menu_top-link" href="#">Здоровье</a>
+						    <div class="navmenu_down-item">
+						    	<ul>
+								    <li class="down-link"><a href="#">Профилактика</a></li>
+								    <li class="down-link"><a href="#">Лечение</a></li>
+								    <li class="down-link"><a href="#">Разведение</a></li>
+								</ul>
+						    </div>
+						</li>
+						<li class="menu_top-item">
+						    <a class="menu_top-link" href="#">Породы</a>
+						    <div class="navmenu_down-item">
+						    	<ul>
+								    <li class="down-link"><a href="#">Выбор породы</a></li>
+								    <li class="down-link"><a href="#">Длинношерстные</a></li>
+								    <li class="down-link"><a href="#">Короткошерстные</a></li>
+								    <li class="down-link"><a href="#">Бесшерстные</a></li>
+								</ul>
+						    </div>
+						</li>
+						<li class="menu_top-item">
+						    <a class="menu_top-link" href="#">Интересное</a>
+						    <div class="navmenu_down-item">
+						    	<ul>
+								    <li class="down-link"><a href="#">Новости о кошках</a></li>
+								    <li class="down-link"><a href="#">Факты</a></li>
+								    <li class="down-link"><a href="#">Милые подборки</a></li>
+								</ul>
+						    </div>
+						</li>
+						<li class="menu_top-item">
+						    <a class="menu_top-link" href="#">Полезное</a>
+						    <div class="navmenu_down-item">
+						    	<ul>
+								    <li class="down-link"><a href="#">Выбор кошки</a></li>
+								    <li class="down-link"><a href="#">Клички</a></li>
+								    <li class="down-link"><a href="#">Обзоры</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu_top-item">
+							<a href="#"><div class="search-icon"></div></a>
+							<div class="navmenu_down-item">
+								<div class="search-item">
+								<input type="search" name="header-search" placeholder="Поиск по статьям" class="header-search">
+								</div>
+							</div>
+						</li>
+					</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content main-page">
+		<h1>Журнал о кошках, котах и котятах</h1>
+		<div class="major-posts">
+			<div class="main-post">
+				<div class="single-post">
+					<a href="#"><img src="img/posts/cat-at-vet.jpg">
+					<h3>Домашняя аптечка для кота: собираем сами</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">10 февраля</span>
+						<div class="category-icon prof"></div><span class="category"><a href="#">Профилактика болезней</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="add-posts">
+				<div class="single-post">
+					<a href="#"><img src="img/posts/kitaec.jpg">
+					<h3>Китаец запрограммировал умный домик для кошек</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">10 февраля</span>
+						<div class="category-icon news"></div><span class="category"><a href="#">Новости о кошках</a></span>
+				</div>
+				</div>
+					<div class="single-post">
+					<a href="#"><img src="img/posts/manul.jpg">
+					<h3>Кто такой кот-манул и кого он обманул</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">20 января</span>
+						<div class="category-icon facts"></div><span class="category"><a href="#">Факты о кошках</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<h2>Породы кошек</h2>
+		<div class="breeds_carousel">
+			<button class="arrow-carousel left"></button>
+			<div class="card"><a href="#">
+				<img class="card-img-top" src="../porody/img/abyss.jpg">
+				<div class="card-body">
+					<h3 class="card-title">Абиссинская кошка</h3>
+					<p class="card-text">Древняя элегантная порода из Эфиопии</p>
+				</div>
+			</a></div>
+			<div class="card"><a href="#">
+				<img class="card-img-top" src="../porody/img/don.jpg">
+				<div class="card-body">
+					<h3 class="card-title">Донской сфинкс</h3>
+					<p class="card-text">Из российской глубинки со всей ее душой</p>
+				</div>
+			</a></div>
+			<div class="card"><a href="#">
+				<img class="card-img-top" src="../porody/img/laperm.jpg">
+				<div class="card-body">
+					<h3 class="card-title">Лаперм</h3>
+					<p class="card-text">Ласковый кудрявый друг</p>
+				</div>
+			</a></div>	
+			<div class="card"><a href="#">
+				<img class="card-img-top" src="../porody/img/exotic.jpg">
+				<div class="card-body">
+					<h3 class="card-title">Экзотическая кошка</h3>
+					<p class="card-text">Плюшевый плоскомордый котик</p>
+				</div>
+			</a></div>
+			<button class="arrow-carousel right"></button>
+		</div>
+		<div class="breeds-info">
+			<a href="#"><div class="choose-breed">
+				<h3>Как выбрать породу кошки</h3>
+				<p>Поможем сделать правильный выбор</p>
+			</div></a>
+			<div class="type-breeds">
+				<h3>Виды пород</h3>
+				<p><a href="#">Длинношерстные породы кошек</a></p>
+				<p><a href="#">Короткошерстные породы кошек</a></p>
+				<p><a href="#">Бесшерстные породы кошек</a></p>
+			</div>
+		</div>
+		<hr>
+		<h2>Воспитать котенка</h2>
+		<div class="carousel-posts">
+			<button class="arrow-carousel left"></button>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/kitten_runs.jpg">
+				<h3>Как приучить котенка к имени: 5 этапов</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">21 февраля</span>
+					<div class="category-icon kitten"></div><span class="category"><a href="#">Воспитание котят</a></span>
+				</div>
+			</div>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/first-day.jpg">
+				<h3>Первые дни котёнка в новом доме</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">25.09.2018</span>
+					<div class="category-icon kitten"></div><span class="category"><a href="#">Воспитание котят</a></span>
+				</div>
+			</div>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/kogti-kota.jpg">
+				<h3>Как приучить котёнка к когтеточке</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">19.08.2018</span>
+					<div class="category-icon kitten"></div><span class="category"><a href="#">Воспитание котят</a></span>
+				</div>
+			</div>
+			<button class="arrow-carousel right"></button>
+		</div>
+		<h2>Содержать кошку в доме</h2>
+		<div class="major-posts">
+			<div class="main-post">
+				<div class="single-post">
+					<a href="#"><img src="img/posts/cat-tree.jpg">
+					<h3>Как защитить ёлку от кота: 10 способов</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">18.12.2018</span>
+						<div class="category-icon soderzh"></div><span class="category"><a href="#">Содержание кошек</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="add-posts">
+				<div class="single-post">
+					<a href="#"><img src="img/posts/glaza-koshek.jpg">
+					<h3>Как ухаживать за глазами кота</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">6.11.2018</span>
+						<div class="category-icon soderzh"></div><span class="category"><a href="#">Содержание кошек</a></span>
+				</div>
+				</div>
+					<div class="single-post">
+					<a href="#"><img src="img/posts/chistka-ushei.jpg">
+					<h3>Как чистить уши кошке безопасно и правильно</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">9.09.2018</span>
+						<div class="category-icon soderzh"></div><span class="category"><a href="#">Содержание кошек</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h2>Правильно кормить кота</h2>
+		<div class="carousel-posts big">
+			<button class="arrow-carousel left"></button>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/kot-ne-est.jpg">
+				<h3>Что делать, если кот не ест</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">13.09.2018</span>
+					<div class="category-icon feed"></div><span class="category"><a href="#">Воспитание котят</a></span>
+				</div>
+			</div>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/cat-bans.jpg">
+				<h3>Чем нельзя кормить кошек</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">22.07.2018</span>
+					<div class="category-icon feed"></div><span class="category"><a href="#">Воспитание котят</a></span>
+				</div>
+			</div>
+			<button class="arrow-carousel right"></button>
+		</div>
+		<h2>Понять поведение своей кошки</h2>
+		<div class="posts-with-list">
+			<div class="single-post">
+					<a href="#"><img src="img/posts/birthday-cat.jpg">
+					<h3>Возраст кошки по человеческим меркам</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">11.12.2018</span>
+						<div class="category-icon poved"></div><span class="category"><a href="#">Поведение кошек</a></span>
+					</div>
+			</div>
+			<div class="single-post">
+					<a href="#"><img src="img/posts/kot-obidelsya.jpg">
+					<h3>Что делать, если кот обиделся</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">09.09.2018</span>
+						<div class="category-icon poved"></div><span class="category"><a href="#">Поведение кошек</a></span>
+					</div>
+			</div>
+			<div class="main-list">
+				<h3>Также по теме:</h3>
+				<p><a href="">Как подружить питомцев</a></p>
+				<p><a href="">Кошачий язык: как понять своего любимца</a></p>
+				<p><a href="">Что делать, если кошка не дает спать</a></p>
+			</div>
+		</div>
+		<hr>
+		<h2>Милые подборки</h2>
+			<div class="posts-with-thumb">
+				<div class="top-post">
+					<div class="single-post">
+						<a href="#"><img src="img/posts/kotohleb.jpg">
+						<h3>Котохлебинг: 18 фото котов в хлебе</a></h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">24 февраля</span>
+							<div class="category-icon cute"></div><span class="category"><a href="#">Милые подборки</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="another-posts">
+					<a href="#"><div class="single-post">
+						<div class="thumb-img"><img src="img/posts/glass.jpeg"></div>
+						<div class="thumb-content"><h3>Коты на стеклянных столах: 23 забавных фото</h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">11 января</span>
+							<div class="category-icon cute"></div><span class="category">Милые подборки</span>
+						</div>
+					</div>
+					</div></a>
+					<a href="#"><div class="single-post">
+						<div class="thumb-img"><img src="img/posts/new-year.png"></div>
+						<div class="thumb-content"><h3>Новогодние коты: подборка из 10 фото 🎄</h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">31.12.2018</span>
+							<div class="category-icon cute"></div><span class="category">Милые подборки</span>
+						</div>
+					</div>
+					</div></a>
+					<a href="#"><div class="single-post">
+						<div class="thumb-img"><img src="img/posts/vor.jpg"></div>
+						<div class="thumb-content"><h3>Коты-воришки: подборка из 11 фото</h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">17.12.2018</span>
+							<div class="category-icon cute"></div><span class="category">Милые подборки</span>
+						</div>
+					</div>
+					</div></a>
+					<a href="#"><div class="single-post">
+						<div class="thumb-img"><img src="img/posts/vanna.jpg"></div>
+						<div class="thumb-content"><h3>Котики после ванной 🛀: 10 фото и гифок</h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">02.10.2018</span>
+							<div class="category-icon cute"></div><span class="category">Милые подборки</span>
+						</div>
+					</div>
+					</div></a>
+					<span class="more"><a href="#">Все подборки</a></span>
+				</div>
+			</div>
+		<h2>Последние новости про кошек</h2>
+		<div class="posts-with-list news-posts">
+			<div class="single-post">
+					<a href="#"><img src="img/posts/kitaec.jpg">
+					<h3>Китаец запрограммировал умный домик для кошек</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">10 февраля</span>
+						<div class="category-icon news"></div><span class="category"><a href="#">Новости о кошках</a></span>
+					</div>
+			</div>
+			<div class="single-post">
+					<a href="#"><img src="img/posts/kanadka.jpg">
+					<h3>Канадка порадовала Твиттер своим диалогом с котом</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">28 января</span>
+						<div class="category-icon news"></div><span class="category"><a href="#">Новости о кошках</a></span>
+					</div>
+			</div>
+			<div class="main-list">
+				<h3>Другие новости:</h3>
+				<p><a href="#">В России вступил в силу закон о защите животных</a></p>
+				<p><a href="#">Найдены следы кошек 800‐летней давности</a></p>
+				<p><a href="#">Хозяин проверил, что делают кошки в его отсутствие</a></p>
+				<p><a href="#">Кота случайно отправили по почте в Канаде</a></p>
+				<p><a href="#">Одноглазая кошка вышла погулять и прошла 370 км</a></p>
+				<span class="more"><a href="#">Все новости</a></span>
+			</div>
+		</div>
+		<h2>Факты о кошачьих</h2>
+		<div class="carousel-posts big">
+			<button class="arrow-carousel left"></button>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/manul.jpg">
+				<h3>Кто такой кот-манул и кого он обманул</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">20 января</span>
+					<div class="category-icon facts"></div><span class="category"><a href="#">Факты о кошках</a></span>
+				</div>
+			</div>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/weather.jpg">
+				<h3>Как определить погоду по кошке: народные приметы</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">01.10.2018</span>
+					<div class="category-icon facts"></div><span class="category"><a href="#">Факты о кошках</a></span>
+				</div>
+			</div>
+			<button class="arrow-carousel right"></button>
+		</div>
+		<hr>
+		<h2>Уберечь кошку от болезней</h2>
+		<div class="carousel-posts">
+			<button class="arrow-carousel left"></button>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/cat-at-vet.jpg">
+				<h3>Домашняя аптечка для кота: собираем сами</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">10 февраля</span>
+					<div class="category-icon prof"></div><span class="category"><a href="#">Профилактика болезней</a></span>
+				</div>
+			</div>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/temperatura.jpg">
+				<h3>Как померить кошке температуру</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">09.09.2018</span>
+					<div class="category-icon prof"></div><span class="category"><a href="#">Профилактика болезней</a></span>
+				</div>
+			</div>
+			<div class="single-post">
+				<a href="#"><img src="img/posts/vitamin.jpg">
+				<h3>Витамины для кошек: зачем нужны и какие бывают</a></h3>
+				<div class="info-about-post">
+					<div class="time-icon"></div><span class="time">05.08.2018</span>
+					<div class="category-icon prof"></div><span class="category"><a href="#">Профилактика болезней</a></span>
+				</div>
+			</div>
+			<button class="arrow-carousel right"></button>
+		</div>
+		<h2>Вылечить питомца</h2>
+		<div class="posts-with-thumb">
+			<div class="top-post">
+					<div class="single-post">
+						<a href="#"><img src="img/posts/perhot.jpg">
+						<h3>Перхоть у кошки. Причины и лечение</a></h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">02.09.2018</span>
+							<div class="category-icon heal"></div><span class="category"><a href="#">Лечение кошек</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="another-posts">
+					<a href="#"><div class="single-post">
+						<div class="thumb-img"><img src="img/posts/ukol.jpg"></div>
+						<div class="thumb-content"><h3>Как сделать укол коту: подробная инструкция</h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">15.08.2018</span>
+							<div class="category-icon heal"></div><span class="category">Лечение кошек</span>
+						</div>
+					</div>
+					</div></a>
+					<a href="#"><div class="single-post">
+						<div class="thumb-img"><img src="img/posts/kleshi.jpg"></div>
+						<div class="thumb-content"><h3>Клещи у кошек: как обнаружить и избавиться</h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">31.07.2018</span>
+							<div class="category-icon heal"></div><span class="category">Лечение кошек</span>
+						</div>
+					</div>
+					</div></a>
+					<a href="#"><div class="single-post">
+						<div class="thumb-img"><img src="img/posts/glisty.jpg"></div>
+						<div class="thumb-content"><h3>Что делать, если у кошки глисты</h3>
+						<div class="info-about-post">
+							<div class="time-icon"></div><span class="time">30.04.2018</span>
+							<div class="category-icon heal"></div><span class="category">Лечение кошек</span>
+						</div>
+					</div>
+					</div></a>
+				</div>
+		</div>
+		<h2>Заняться разведением котят</h2>
+		<div class="major-posts">
+			<div class="main-post">
+				<div class="single-post">
+					<a href="#"><img src="img/posts/pregnant-cat.jpg">
+					<h3>Беременность кошек: как проходит по месяцам</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">30.10.2018</span>
+						<div class="category-icon razv"></div><span class="category"><a href="#">Разведение кошек</a></span>
+					</div>
+				</div>
+			</div>
+			<div class="add-posts">
+				<div class="single-post">
+					<a href="#"><img src="img/posts/cat-krichit.jpg">
+					<h3>Течка у кошек: что делать хозяину</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">21.08.2018</span>
+						<div class="category-icon razv"></div><span class="category"><a href="#">Разведение кошек</a></span>
+				</div>
+				</div>
+					<div class="single-post">
+					<a href="#"><img src="img/posts/love-cat.jpg">
+					<h3>Вязка кошек: подготовка и проведение</a></h3>
+					<div class="info-about-post">
+						<div class="time-icon"></div><span class="time">22.07.2018</span>
+						<div class="category-icon razv"></div><span class="category"><a href="#">Разведение кошек</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footer_orange">
+			<div class="footer-content">
+				<div class="contact-content">
+					<div class="contact-info">
+					<ul>
+						<li class="pages"><a href="#">Контакты</a></li>
+						<li class="pages"><a href="#">Для рекламодателей</a></li>
+					</ul>
+					<ul>
+						<li class="social-icons"><a href="https://vk.com/murrlota" target="_blank"><div class="vk-icon"></div></a></li>
+						<li class="social-icons"><a href="https://twitter.com/murrlota" target="_blank"><div class="twit-icon"></div></a></li>
+					</ul>
+					</div>
+					<div class="emailing">
+						<p>Подпишись на нашу кошачью рассылку</p>
+						<form class="subscribe-form">
+							<input class="email-input" type="e-mail" placeholder="Электронная почта" name="email"/>
+							<button class="email-butt">Подписаться</button>
+						</form>
+					</div>
+				</div>
+				<hr>
+				<p class="copyright">© 2019 Про котиков</p>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/mobilemenu.js"></script>
+		
+	</footer>
+</body>
+</html>
