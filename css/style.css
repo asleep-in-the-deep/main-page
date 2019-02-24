@@ -214,6 +214,10 @@ header {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
+  @media (max-width: 1080px) {
+    .content {
+      margin: 0 20px 0;
+      max-width: 100%; } }
   .content h3 a {
     color: #000; }
   .content img {
@@ -229,6 +233,13 @@ header {
           flex-direction: row;
   max-width: 100%;
   margin: 20px 0; }
+  @media (max-width: 1024px) {
+    .major-posts {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .major-posts img {
     border-radius: 3px; }
   .major-posts .single-post:hover img {
@@ -249,6 +260,10 @@ header {
       font-size: 36px;
       padding-top: 5px;
       line-height: 1; }
+    @media (max-width: 1024px) {
+      .major-posts .main-post {
+        -ms-flex-preferred-size: 80%;
+            flex-basis: 80%; } }
   .major-posts .add-posts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -264,7 +279,20 @@ header {
       font-size: 20px;
       padding-top: 5px; }
     .major-posts .add-posts .single-post {
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%; }
+      @media (max-width: 1024px) {
+        .major-posts .add-posts .single-post {
+          margin-right: 20px; } }
+    @media (max-width: 1024px) {
+      .major-posts .add-posts {
+        -ms-flex-preferred-size: 80%;
+            flex-basis: 80%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
 
 .info-about-post {
   font-size: 14px;
@@ -350,6 +378,19 @@ header {
       margin-bottom: 0;
       color: #333333;
       text-decoration: none; }
+    @media (max-width: 1024px) {
+      .breeds_carousel .card:nth-child(4) {
+        display: none; } }
+    @media (max-width: 600px) {
+      .breeds_carousel .card {
+        width: 50%; }
+        .breeds_carousel .card:nth-child(3) {
+          display: none; } }
+    @media (max-width: 420px) {
+      .breeds_carousel .card {
+        width: 90%; }
+        .breeds_carousel .card:nth-child(2) {
+          display: none; } }
 
 .arrow-carousel {
   -ms-flex-item-align: center;
@@ -362,6 +403,10 @@ header {
   background-repeat: no-repeat;
   outline: none;
   cursor: pointer; }
+  @media (max-width: 1024px) {
+    .arrow-carousel {
+      width: 11px;
+      height: 20px; } }
 
 .left {
   background-image: url(../img/left-arrow.svg); }
@@ -385,8 +430,19 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 60px; }
+  @media (max-width: 1024px) {
+    .breeds-info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
   .breeds-info .choose-breed {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -406,11 +462,27 @@ header {
     background-repeat: no-repeat;
     -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.45);
             box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.45); }
+    @media (max-width: 700px) {
+      .breeds-info .choose-breed {
+        background-image: url(../img/posts/two-cats-2.jpg);
+        width: 450px;
+        height: 277px; } }
+    @media (max-width: 470px) {
+      .breeds-info .choose-breed {
+        background-image: url(../img/posts/two-cats-1.jpg);
+        width: 300px;
+        height: 185px; } }
     .breeds-info .choose-breed h3 {
       margin: 0px 25px 10px;
       margin-right: 260px;
       text-shadow: 0 2px 2px black;
       color: #fff; }
+      @media (max-width: 700px) {
+        .breeds-info .choose-breed h3 {
+          margin-right: 0; } }
+      @media (max-width: 470px) {
+        .breeds-info .choose-breed h3 {
+          font-size: 20px; } }
     .breeds-info .choose-breed:hover h3 {
       -webkit-box-shadow: inset 0 -1px #E0E0E0;
               box-shadow: inset 0 -1px #E0E0E0;
@@ -425,7 +497,7 @@ header {
   .breeds-info .type-breeds {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
-    margin-left: 23px;
+    margin-left: 20px;
     padding: 15px 25px 0;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.5em;
@@ -441,6 +513,17 @@ header {
       .breeds-info .type-breeds a:hover {
         text-decoration: none;
         color: #400D12; }
+    @media (max-width: 1024px) {
+      .breeds-info .type-breeds {
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 650px; } }
+    @media (max-width: 700px) {
+      .breeds-info .type-breeds {
+        max-width: 450px; } }
+    @media (max-width: 470px) {
+      .breeds-info .type-breeds {
+        max-width: 300px; } }
 
 .carousel-posts {
   display: -webkit-box;
@@ -465,6 +548,18 @@ header {
                 box-shadow: inset 0 -1px #E0E0E0;
         padding-bottom: 1px;
         color: #EE451F; }
+    @media (max-width: 800px) {
+      .carousel-posts .single-post {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+        .carousel-posts .single-post:nth-child(4) {
+          display: none; } }
+    @media (max-width: 550px) {
+      .carousel-posts .single-post {
+        -ms-flex-preferred-size: 90%;
+            flex-basis: 90%; }
+        .carousel-posts .single-post:nth-child(2) {
+          display: none; } }
   .carousel-posts .arrow-carousel {
     width: 16px;
     height: 30px; }
@@ -475,11 +570,16 @@ header {
   margin: 0 20px 0; }
   .big .single-post h3 {
     font-size: 26px; }
+  @media (max-width: 550px) {
+    .big .single-post {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; } }
 .big .arrow-carousel {
   width: 20px;
   height: 37px; }
 
 .posts-with-list {
+  max-width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,6 +589,13 @@ header {
   border-radius: 0.5em;
   background-color: #fdc23e;
   padding: 25px 25px 50px; }
+  @media (max-width: 1024px) {
+    .posts-with-list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
   .posts-with-list .single-post {
     background-color: #fff;
     -ms-flex-preferred-size: 30%;
@@ -531,6 +638,9 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 35%; }
+    @media (max-width: 1024px) {
+      .posts-with-list .main-list {
+        margin-top: 20px; } }
     .posts-with-list .main-list .more {
       margin-top: 10px;
       text-align: right; }
@@ -571,6 +681,13 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 20px 0 50px; }
+  @media (max-width: 1024px) {
+    .posts-with-thumb {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
   .posts-with-thumb img {
     border-radius: 0.5rem; }
   .posts-with-thumb .top-post {
