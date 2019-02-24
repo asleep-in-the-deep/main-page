@@ -579,7 +579,6 @@ header {
   height: 37px; }
 
 .posts-with-list {
-  max-width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
