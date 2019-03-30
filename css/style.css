@@ -141,6 +141,15 @@ header {
         width: 30px;
         height: 30px;
         margin: 15px; } }
+    @media (max-width: 1025px) and (max-width: 600px) {
+      .menu-icon_close {
+        width: 28px;
+        height: 28px; } }
+    @media (max-width: 1025px) and (max-width: 390px) {
+      .menu-icon_close {
+        width: 20px;
+        height: 20px; } }
+
   @media (max-width: 600px) {
     .menu-icon {
       width: 28px;
