@@ -1,5 +1,5 @@
 $orange: #FF8000;
-$foot-orange: #f58a2c;
+$foot-orange: #F17022;
 $bright-orange: #f38630;
 $hover-orange: #EE451F;
 $grey: #E0E0E0;
@@ -24,6 +24,9 @@ body {
 header {
 	height: 65px;
 	flex: 0 0 auto;
+	@media (max-width: 620px) {
+		height: 55px;
+	}
 }
 
 .top-header {
@@ -59,6 +62,14 @@ header {
 	height: 42px;
 	background-size: cover;
 	background-repeat: no-repeat;
+		@media (max-width: 600px) {
+			width: 35px;
+			height: 35px;
+		}
+		@media (max-width: 390px) {
+			width: 30px;
+			height: 30px;
+		}
 	}
 	.logo-text {
 	align-self: center;
@@ -70,6 +81,12 @@ header {
 	text-decoration: none;
 		&:hover {
 			text-decoration: none;
+		}
+		@media (max-width: 600px) {
+			font-size: 18px;
+		}
+		@media (max-width: 390px) {
+			font-size: 17px;
 		}
 	}
 	&:hover .cat-face {
@@ -125,6 +142,14 @@ header {
 			margin: 15px;
 		}
 	}
+	@media (max-width: 600px) {
+			width: 28px;
+			height: 28px;
+		}
+	@media (max-width: 390px) {
+			width: 20px;
+			height: 20px;
+		}
 }
 
 .menu_mobile {
@@ -216,6 +241,33 @@ header {
 	max-width: 1000px;
 	margin: 10px auto 50px; 
 	flex: 1 0 auto;
+	h1  {
+		margin-top: 10px;
+		font-size: 32px;
+    	font-weight: 650;
+		line-height: 0.9;
+		@media (max-width: 600px) {
+			font-size: 28px;
+		}
+		@media (max-width: 410px) {
+			font-size: 26px;
+		}
+	}
+	h2 {
+		font-size: 28px;
+		@media (max-width: 600px) {
+			font-size: 25px;
+		}
+		@media (max-width: 410px) {
+			font-size: 22px;
+		}
+	}
+	@media (max-width: 1080px) {
+		max-width: 95%;
+	}
+	@media (max-width: 540px) {
+		margin-left: 15px;
+	}
 	h3 a {
 		color: $black;
 	}
@@ -229,8 +281,14 @@ header {
 	flex-direction: row;
 	max-width: 100%;
 	margin: 20px 0;
+	@media (max-width: 760px) {
+		flex-wrap: wrap;
+	}
+	@media (max-width: 620px) {
+		margin: 10px 0;
+	}
 	img {
-		border-radius: 3px;
+		border-radius: 5px;
 	}
 	.single-post {
 		&:hover img {
@@ -250,6 +308,27 @@ header {
 			font-size: 36px;
 			padding-top: 5px;
 			line-height: 1;
+			@media (max-width: 1024px) {
+			font-size: 30px;
+			}
+			@media (max-width: 760px) {
+			font-size: 24px;
+			}
+			@media (max-width: 410px) {
+				font-size: 20px;
+			}
+		}
+		@media (max-width: 1024px) {
+			flex-basis: 60%;
+		}
+		@media (max-width: 922px) {
+			flex-basis: 55%;
+		}
+		@media (max-width: 760px) {
+			flex-basis: 85%;
+		}
+		@media (max-width: 640px) {
+			flex-basis: 95%;
 		}
 	}
 	.add-posts {
@@ -257,12 +336,46 @@ header {
 		flex-direction: column;
 		flex-basis: 30%;
 		margin: 10px 20px 10px 20px;
+		@media (max-width: 480px) {
+				flex-wrap: wrap;
+			}
 		h3 {
 			font-size: 20px;
 			padding-top: 5px;
+			@media (max-width: 600px) {
+				font-size: 17px;
+			}
+			@media (max-width: 410px) {
+				font-size: 16px;
+			}
 		}
 		.single-post {
 			padding-bottom: 20px;
+			flex-basis: 40%;
+			@media (max-width: 1024px) {
+				margin-right: 20px;
+			}
+			@media (max-width: 760px) {
+				margin-right: 15px;
+				flex-basis: 47%;
+			}
+			@media (max-width: 480px) {
+				flex-basis: 80%;
+			}
+		}
+		@media (max-width: 1024px) {
+			flex-basis: 30%;
+		}
+		@media (max-width: 922px) {
+			flex-basis: 35%;
+		}
+		@media (max-width: 760px) {
+			flex-basis: 90%;
+			flex-direction: row;
+			margin-left: 0;
+		}
+		@media (max-width: 640px) {
+			flex-basis: 95%;
 		}
 	}
 }
@@ -271,6 +384,9 @@ header {
 	color: grey;
 	display: flex;
 	align-items: center;
+	@media (max-width: 640px) {
+			font-size: 12px;
+		}
 	& a {
 	box-shadow: inset 0 -1px $grey;
 	padding-bottom: 1px;
@@ -287,6 +403,11 @@ header {
 		background-size: cover;
 		background-repeat: no-repeat;
 		margin-right: 5px;
+		@media (max-width: 550px) {
+			width: 17px;
+			height: 17px;
+			margin-right: 3px;
+		}
 	}
 	.category-icon {
 		width: 20px;
@@ -294,6 +415,11 @@ header {
 		background-size: cover;
 		background-repeat: no-repeat;	
 		margin: 0 5px 0 10px;
+		@media (max-width: 550px) {
+			width: 17px;
+			height: 17px;
+			margin: 0 3px 0 5px;
+		}
 	}
 	.prof {
 			background-image: url(../img/category/vitamins.svg);
@@ -359,6 +485,23 @@ header {
 		    color: #333333;
 		    text-decoration: none;
 		}
+		@media (max-width: 1024px) {
+			&:nth-child(4) {
+				display: none;
+			}
+		}
+		@media (max-width: 600px) {
+			width: 50%;
+			&:nth-child(3) {
+				display: none;
+			}
+		}
+		@media (max-width: 420px) {
+			width: 85%;
+			&:nth-child(2) {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -372,6 +515,10 @@ header {
 	background-repeat: no-repeat;
 	outline: none;
 	cursor: pointer;
+	@media (max-width: 1024px) {
+		width: 11px;
+    	height: 20px;
+	}
 }
 	.left {
 		background-image: url(../img/left-arrow.svg);
@@ -392,48 +539,96 @@ header {
 
 .breeds-info {
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 30px;
 	margin-bottom: 60px;
+	padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    @media (max-width: 620px) {
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
+	@media (max-width: 380px) {
+		padding-left: 0;
+    	padding-right: 15px;
+	}
 	.choose-breed {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
-		width: 650px;
-		height: 400px;
-		background-image: url(../img/posts/two-cats-3.jpg);
-		border-radius: 0.5em;
-		background-size: cover;
-		background-repeat: no-repeat;
-		box-shadow: 0 5px 20px 0 rgba(0,0,0,.45);
-		& h3 {
-			margin: 0px 25px 10px;
-			margin-right: 260px;
-			text-shadow: 0 2px 2px black;
-			color: #fff;
+		max-width: 650px;
+		@media (max-width: 1050px) {
+				flex-basis: 65%;
+			}
+		@media (max-width: 760px) {
+				flex-basis: 100%;
+			}
+		& img {
+			border-radius: 0.5em;
+			box-shadow: 0 5px 20px 0 rgba(0,0,0,.45);
 		}
-		&:hover h3 {
-			box-shadow: inset 0 -1px $grey;
-			padding-bottom: 1px;
+		& h3 {
+			margin: -85px 25px 5px;
+			text-shadow: 0 3px 2px black;
+			font-size: 26px;
+			color: #fff;
+			@media (max-width: 470px) {
+				font-size: 20px;
+				margin-top: -65px;
+			}
+			@media (max-width: 342px) {
+				font-size: 18px;
+			}
+		}
+		& a:hover h3 {
 			color: $orange;
 		}
 		& p {
-			margin: 0px 25px 20px;
+			margin: 0px 25px 24px;
 			color: #fff;
 			text-shadow: 0 2px 2px black;
 			font-family: Lora;
 			opacity: .8;
+			@media (max-width: 470px) {
+				font-size: 14px;
+			}
+			@media (max-width: 342px) {
+				font-size: 12px;
+			}
 		}
 	}
 	.type-breeds {
 		flex-basis: 30%;
-		margin-left: 23px;
+		margin-left: 20px;
 		padding: 15px 25px 0;
 		border: 1px solid rgba(0, 0, 0, .125);
 		border-radius: 0.5em;
 		background-color: #53bbf4;
 		color: #fff;
+		@media (max-width: 760px) {
+				margin-left: 0;
+				margin-top: 30px;
+				flex-basis: 100%;
+			}
+		@media (max-width: 470px) {
+				margin-top: 15px;
+			}
 		& h3 {
 			padding-bottom: 15px;
+			@media (max-width: 900px) {
+				font-size: 22px;
+			}
+			@media (max-width: 470px) {
+				font-size: 20px;
+			}
+		}
+		& p {
+			@media (max-width: 900px) {
+				font-size: 15px;
+			}
+			@media (max-width: 470px) {
+				font-size: 14px;
+			}
 		}
 		& a {
 			box-shadow: inset 0 -1px $grey;
@@ -446,17 +641,24 @@ header {
 		}
 	}
 }
-
+	
 .carousel-posts {
 	display: flex;
 	margin-top: 30px;
 	margin-bottom: 50px;
+	@media (max-width: 620px) {
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
 	.single-post {
 		margin: 0 10px 0;
 		flex-basis: 30%;
 		& h3 {
 			padding-top: 5px;
 			font-size: 20px;
+			@media (max-width: 600px) {
+				font-size: 17px;
+			}
 		}
 		&:hover {
 			transform: scale(1.05);
@@ -467,10 +669,29 @@ header {
 				color: $hover-orange;
 			}
 		}
+		@media (max-width: 850px) {
+			flex-basis: 45%;
+			&:nth-child(4) {
+				display: none;
+			}
+		}
+		@media (max-width: 550px) {
+			flex-basis: 90%;
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+		@media (max-width: 450px) {
+			flex-basis: 80%;
+		}
 	}
 	.arrow-carousel {
 		width: 16px;
 		height: 30px;
+		@media (max-width: 410px) {
+			width: 14px;
+			height: 26px;
+		}
 	}
 }
 .big {
@@ -479,11 +700,24 @@ header {
 		margin: 0 20px 0;
 		& h3 {
 		font-size: 26px;
+			@media (max-width: 640px) {
+			font-size: 17px;
+			}
+		}
+		@media (max-width: 550px) {
+			flex-basis: 90%;
+		}
+		@media (max-width: 450px) {
+			flex-basis: 75%;
 		}
 	}
 	.arrow-carousel {
 		width: 20px;
 		height: 37px;
+		@media (max-width: 410px) {
+			width: 14px;
+			height: 26px;
+		}
 	}
 }
 
@@ -494,14 +728,51 @@ header {
 	margin-bottom: 60px;
 	border: 1px solid rgba(0, 0, 0, .125);
 	border-radius: 0.5em;
-	background-color: #fdc23e;
+	background-color: #f9ac3b;
 	padding: 25px 25px 50px;
+	@media (max-width: 820px) {
+			flex-wrap: wrap;
+		}
+	@media (max-width: 820px) {
+			padding-bottom: 20px;
+		}
+	@media (max-width: 620px) {
+			padding: 15px 15px 20px;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	@media (max-width: 500px) {
+			max-width: 95%;
+		}
 	.single-post {
 		background-color: #fff;
 		flex-basis: 30%;
+		position: relative;
 		margin-right: 25px;
 		border-radius: 0.3em;
+		min-height: 330px;
 		box-shadow: 0 4px 6px rgba(0,0,0,.25);
+		@media (max-width: 1024px) {
+			flex-basis: 35%;
+		}
+		@media (max-width: 820px) {
+			flex-basis: 45%;
+			min-height: 350px;
+		}
+		@media (max-width: 620px) {
+			min-height: 300px;
+		}
+		@media (max-width: 560px) {
+			flex-basis: 80%;
+			min-height: 365px;
+    		margin-bottom: 15px;
+		}
+		@media (max-width: 450px) {
+			min-height: 325px;
+		}
+		@media (max-width: 390px) {
+			min-height: 290px;
+		}
 		& img {
 			border-top-left-radius: calc(0.3rem - 1px);
     		border-top-right-radius: calc(0.3rem - 1px);
@@ -510,11 +781,15 @@ header {
 			line-height: 1;
 			font-size: 22px;
 			padding: 10px;
+			@media (max-width: 620px) {
+				font-size: 18px;
+			}
 		}
 		.info-about-post {
 			padding: 10px;
 			display: flex;
-			align-items: flex-end;
+			position: absolute;
+    		bottom: 5px;
 		}
 		&:hover {
 			transform: scale(1.05);
@@ -530,6 +805,14 @@ header {
 		display: flex;
    		flex-direction: column;
 		max-width: 35%;
+    	padding: 0 10px 0;
+    	@media (max-width: 1024px) {
+			max-width: 30%;
+		}
+		@media (max-width: 820px) {
+			margin-top: 20px;
+			max-width: 80%;
+		}
 		.more {
 			margin-top: 10px;
 			text-align: right;
@@ -541,14 +824,23 @@ header {
 				padding: 4px;
 				box-shadow: none;
 			}
+			@media (max-width: 820px) {
+				text-align: left;
+			}
 		}
 		& h3 {
 			color: #fff;
 			font-size: 26px;
+			@media (max-width: 620px) {
+				font-size: 22px;
+			}
 		}
 		& p {
 			margin-bottom: 0.5rem;
 			font-size: 16px;
+			@media (max-width: 620px) {
+				font-size: 14px;
+			}
 		}
 		& a {
 			box-shadow: inset 0 -1px $grey;
@@ -575,6 +867,12 @@ header {
 	& img {
 		border-radius: 0.5rem;
 	}
+	@media (max-width: 790px) {
+		flex-wrap: wrap;
+		}
+	@media (max-width: 620px) {
+			margin-bottom: 30px;
+		}
 	.top-post {
 		flex-basis: 60%;
 		margin-right: 20px;
@@ -583,11 +881,41 @@ header {
 			padding-bottom: 1px;
 			color: $hover-orange;
 		}
+		@media (max-width: 1024px) {
+			flex-basis: 55%;
+		}
+		@media (max-width: 922px) {
+			flex-basis: 75%;
+		}
+		@media (max-width: 790px) {
+			flex-basis: 85%;
+		}
+		@media (max-width: 640px) {
+			flex-basis: 95%;
+		}
+		h3 {
+			@media (max-width: 922px) {
+				font-size: 24px;
+			}
+		}
 	}
 	.another-posts {
 		display: flex;
 		flex-direction: column;
 		flex-basis: 41%;
+		@media (max-width: 922px) {
+			flex-basis: 65%;
+		}
+		@media (max-width: 790px) {
+			margin-top: 30px;
+			flex-basis: 80%;
+		}
+		@media (max-width: 640px) {
+			flex-basis: 95%;
+		}
+		@media (max-width: 340px) {
+			flex-basis: 98%;
+		}
 		.single-post {
 			display: inline-flex;
 			flex-direction: row;
@@ -613,6 +941,9 @@ header {
 	.more {
 		margin-top: 10px;
 		text-align: right;
+		@media (max-width: 790px) {
+			text-align: left;
+			}
 		& a {
 			font-size: 14px;
 			font-weight: 500;
@@ -642,6 +973,10 @@ footer {
 	max-width: 1100px;
 	width: 90%;
 	margin: 0 auto;
+	font-size: 16px;
+	@media (max-width: 480px) {
+			font-size: 14px;
+		}
 	}	
 }
 
