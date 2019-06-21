@@ -540,7 +540,7 @@ header {
     opacity: 0.9; }
   .menu_top-item:after {
     display: inline-block;
-    content: "\f107";
+    content: "\f078";
     font-family: 'FontAwesome';
     text-rendering: optimizeLegibility;
     margin-left: 8px;
