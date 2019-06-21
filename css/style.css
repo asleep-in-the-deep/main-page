@@ -541,7 +541,7 @@ header {
   .menu_top-item:after {
     display: inline-block;
     content: "\f078";
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Free';
     text-rendering: optimizeLegibility;
     margin-left: 8px;
     color: #FF8000;
