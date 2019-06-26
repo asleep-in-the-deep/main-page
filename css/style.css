@@ -561,6 +561,10 @@ header {
   white-space: nowrap;
   -webkit-box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.7);
           box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.7); }
+@media (max-width: 1050px) { 
+  .navmenu_down-item { 
+position: relative;
+  } }
   .navmenu_down-item .down-link {
     list-style: none;
     padding: 5px 8px;
