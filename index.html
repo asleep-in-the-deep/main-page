@@ -17,15 +17,15 @@
 	<header>
 		<div class="top-header">
 			<div class="top-header_col">
-				<a class="cat-logo" href="#">
-				<div class="navmenu_logo">
-					<div class="cat-face"></div>
-					<div class="logo-text">Про котиков</div>
-				</div>
-				<a href="javascript:void(0);" onclick="mobileMenu(),menuClose()"><div class="menu-icon" id="icon"></div></a>
-			</a>
-			</div>
-			<div class="top-header_col">
+        <a class="cat-logo" href="#">
+          <div class="navmenu_logo">
+            <div class="cat-face"></div>
+            <div class="logo-text">Про котиков</div>
+          </div>
+        </a>
+        <div class="menu-icon" id="icon"></div>
+      </div>
+      <div class="top-header_col">
 				<div class="nav-items">
 					<nav class="navmenu">
 					<ul class="menu" id="top-nav">
@@ -81,11 +81,12 @@
 								</ul>
 							</div>
 						</li>
-						<li class="menu_top-item">
+						<li class="search-item">
 							<a href="#"><div class="search-icon"></div></a>
-							<div class="navmenu_down-item">
-								<div class="search-item">
+							<div class="navmenu_down-item" id="search">
+								<div class="search-content">
 								<input type="search" name="header-search" placeholder="Поиск по статьям" class="header-search">
+								<a class="inside-icon" href="#"></a>
 								</div>
 							</div>
 						</li>
@@ -512,10 +513,8 @@
 				<p class="copyright">© 2019 Про котиков</p>
 			</div>
 		</div>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/mobilemenu.js"></script>
-		
 	</footer>
 </body>
 </html>
