@@ -50,6 +50,12 @@ button::-moz-focus-inner,
   padding: 0;
   border-style: none; }
 
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none; }
+
 input[type="radio"],
 input[type="checkbox"] {
   -webkit-box-sizing: border-box;
@@ -448,20 +454,69 @@ header {
     width: 18px;
     height: 18px;
     background-size: cover;
-    background-repeat: no-repeat; }
-  .nav-items .menu .header-search {
-    width: 100%;
-    border-radius: 0 0 5px 5px;
-    border: 1px solid;
-    border-color: #FFFDED;
-    padding: 5px;
-    outline: none; }
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
+.close-search {
+  background-image: url(../img/close.svg) !important;
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
+.inside-icon {
+  background-image: url(../img/search.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  margin-top: 15px;
+  right: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .inside-icon:hover {
+    background-image: url(../img/search-hover.svg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+
+.header-search {
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid;
+  border-color: #FFFDED;
+  padding: 10px 5px;
+  outline: none; }
+  @media (max-width: 1025px) {
+    .header-search {
+      border-radius: 10px;
+      border-color: #FF8000;
+      min-width: 235px;
+      -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+              box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3); } }
+  @media (min-width: 420px) {
+    .header-search {
+      min-width: 300px; } }
+  @media (min-width: 515px) {
+    .header-search {
+      min-width: 415px; } }
+  @media (min-width: 730px) {
+    .header-search {
+      min-width: 600px; } }
 
 /* Иконка и меню для мобильных */
 .menu-icon {
   display: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg); }
   @media (max-width: 1025px) {
@@ -485,8 +540,8 @@ header {
 .close-icon {
   display: block;
   background-image: url(../img/close.svg);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg); }
   @media (max-width: 600px) {
@@ -524,55 +579,94 @@ header {
   position: relative; }
   .menu_top-item:hover {
     background-color: #FFFDED; }
+  @media (max-width: 1025px) {
+    .menu_top-item {
+      padding: 20px 20px 10px; } }
   .menu_top-item .menu_top-link {
     color: #000; }
+    .menu_top-item .menu_top-link:after {
+      display: inline-block;
+      content: '';
+      background-image: url(../img/arrow-down.svg);
+      width: 10px;
+      height: 10px;
+      background-size: cover;
+      margin-left: 8px;
+      -webkit-transition: .5s;
+      transition: .5s; }
   .menu_top-item:hover .menu_top-link {
     color: #FF8000; }
-  .menu_top-item:hover .search-icon {
-    background-image: url(../img/search-hover.svg);
-    opacity: 0.9; }
-  .menu_top-item:after {
-    display: inline-block;
-    content: '';
-    background-image: url(../img/arrow-down.svg);
-    width: 10px;
-    height: 10px;
-    background-size: cover;
-    margin-left: 8px;
-    -webkit-transition: .5s;
-    transition: .5s; }
-  .menu_top-item:hover:after {
+  .menu_top-item:hover .menu_top-link:after {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg); }
   .menu_top-item:last-child:after {
     content: none; }
 
+.search-item {
+  display: inline-block;
+  padding: 20px 20px;
+  position: relative; }
+  .search-item:hover {
+    background-color: #FFFDED; }
+  .search-item:hover .search-icon {
+    background-image: url(../img/search-hover.svg);
+    opacity: 0.9;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  @media (max-width: 1025px) {
+    .search-item .navmenu_down-item {
+      display: block; } }
+
+.down-search {
+  display: block !important;
+  left: -300px !important;
+  right: 0;
+  z-index: 20 !important; }
+
+.search-content {
+  border-top: 1px solid #f38630; }
+  @media (max-width: 1025px) {
+    .search-content {
+      border: none; } }
+
 /* Пункты подменю */
 .navmenu_down-item {
   display: none;
   position: absolute;
-  top: calc(100% + 1px);
+  top: 100%;
   left: 0;
   min-width: 100%;
-  z-index: 10;
+  z-index: 50;
   background-color: white;
   border: 1px solid rgba(213, 115, 0, 0.45);
   border-radius: 0 0 5px 5px;
   white-space: nowrap;
-  -webkit-box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.7);
-          box-shadow: 2px 2px 20px -5px rgba(0, 0, 0, 0.7); }
-@media (max-width: 1050px) { 
-  .navmenu_down-item { 
-position: relative;
-  } }
+  -webkit-box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.3), -4px 4px 6px -1px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.3), -4px 4px 6px -1px rgba(0, 0, 0, 0.3); }
+  @media (max-width: 1025px) {
+    .navmenu_down-item {
+      position: relative;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border: none;
+      margin-top: 10px; } }
   .navmenu_down-item .down-link {
     list-style: none;
     padding: 5px 8px;
     font-size: 14px;
     border-bottom: 1px solid #FFF0BA; }
+    .navmenu_down-item .down-link:first-child {
+      border-top: 1px solid #f38630; }
+      @media (max-width: 1025px) {
+        .navmenu_down-item .down-link:first-child {
+          border: none; } }
     .navmenu_down-item .down-link:last-child {
       border-radius: 0 0 5px 5px;
       border-bottom: none; }
+    @media (max-width: 1025px) {
+      .navmenu_down-item .down-link {
+        border: none;
+        background-color: #FFFDED; } }
     .navmenu_down-item .down-link a {
       color: #000; }
     .navmenu_down-item .down-link:hover {
@@ -1784,7 +1878,7 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   bottom: 60px;
   right: -40px;
   width: 40px;
